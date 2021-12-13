@@ -1,0 +1,6 @@
+apiVersion: samplecrd.github.com/v1
+kind: Car
+metadata:
+  name: example-car
+spec:
+  status: "running"

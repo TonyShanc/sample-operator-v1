@@ -1,0 +1,11 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  name: cars.samplecrd.github.com
+spec:
+  group: samplecrd.github.com
+  version: v1
+  names:
+    kind: Car
+    plural: cars
+  scope: Namespaced
