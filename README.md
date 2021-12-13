@@ -1,44 +1,6 @@
 # intro
 a small operator demo which only watches car cr's events.
 
-# code structure
-```
-├── bin                                         controller可执行文件输出目录
-│   └── main
-├── controller.go                               controller实现部分
-├── cr
-│   └── car.yaml                                example cr
-├── crd
-│   └── car.yaml                                example crd
-├── go.mod
-├── go.sum
-├── hack                                        一些对代码生成有用的东西
-│   ├── boilerplate.go.txt                      开源协议
-│   └── tools.go                                为了把代码生成工具放到vendor
-├── main.go                                     入口
-├── Makefile                                    简化命令
-├── pkg
-│   ├── apis                                    crd设计
-│   │   └── samplecrd
-│   │       ├── register.go
-│   │       └── v1
-│   │           ├── doc.go
-│   │           ├── register.go
-│   │           ├── types.go
-│   │           └── zz_generated.deepcopy.go    code-generator生成的crd deep-copy文件
-│   ├── client                                  code-generator生成的crd的listers clientset informers组件
-│   │   ├── clientset
-│   │   │   └── ...
-│   │   ├── informers
-│   │   │   └── ...
-│   │   └── listers
-│   │       └── ...
-│   └── signals                                 终止信号 for graceful stop
-│       ├── ...
-├── README.md
-```
-
-
 # environment:
 
 ubuntu-20.04-amd64  
